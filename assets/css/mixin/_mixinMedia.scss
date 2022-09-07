@@ -1,0 +1,51 @@
+
+@mixin media($breakpoint) {
+    
+    @if ($breakpoint==minSmall) {
+        @media (min-width: 576px) {
+            @content;
+        }
+    }
+
+    @if ($breakpoint==minMedium) {
+        @media (min-width: 768px) {
+            @content;
+        }
+    }
+
+    @if ($breakpoint==minLarge) {
+        @media (min-width: 992px) {
+            @content;
+        }
+    }
+
+    @if ($breakpoint==minXlarge) {
+        @media (max-width: 1200px) {
+            @content;
+        }
+    }
+
+    @if ($breakpoint==maxSmall) {
+        @media (max-width: 575px) {
+            @content;
+        }
+    }
+
+    @if ($breakpoint==maxMedium) {
+        @media (max-width: 767px) {
+            @content;
+        }
+    }
+
+    @if ($breakpoint==maxLarge) {
+        @media (max-width: 991.5px) {
+            @content;
+        }
+    }
+
+    @if ($breakpoint==maxXlarge) {
+        @media (max-width: 1999px) {
+            @content;
+        }
+    }
+}
