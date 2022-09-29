@@ -585,10 +585,15 @@ html {
 }
 
 .team .box .block-img {
-  height: 150px;
   border-radius: 50%;
   overflow: hidden;
   display: inline-block;
+}
+.team .box .block-img img {
+  height: 150px;
+  width: 150px;
+  object-fit: cover;
+  object-position: top;
 }
 .team .box ul li {
   display: inline-block;
